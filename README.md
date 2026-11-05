@@ -31,12 +31,6 @@ O projeto não utiliza frameworks, banco de dados nem dependências externas.
 cd /d "%USERPROFILE%\Desktop" && git clone https://github.com/eduardonnn/projeto-exemplo-simples.git
 ```
 
-3. Para entrar na pasta e abrir a aplicação no navegador, execute:
-
-```bat
-cd projeto-exemplo-simples && start index.html
-```
-
 **Explicação dos comandos:**
 
 - `cd /d "%USERPROFILE%\Desktop"`: acessa a Área de Trabalho do usuário no Windows.
