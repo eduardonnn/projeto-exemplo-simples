@@ -20,41 +20,40 @@ Aplicação web de **gerenciamento de tarefas**, desenvolvida para demonstrar a 
 
 O projeto não utiliza frameworks, banco de dados nem dependências externas.
 
-## Execução rápida no Windows (PowerShell)
+## Como baixar o projeto na Área de Trabalho (CMD)
 
-Abra o **PowerShell** ou o terminal do **Visual Studio Code** e copie estes comandos, um de cada vez:
+**Requisito:** ter o Git instalado no Windows.
 
-```powershell
-git clone https://github.com/eduardonnn/projeto-exemplo-simples.git
-cd projeto-exemplo-simples
-start index.html
+1. Abra o **Prompt de Comando (CMD)**.
+2. Copie e execute este comando único para criar a pasta do projeto diretamente na **Área de Trabalho**:
+
+```bat
+cd /d "%USERPROFILE%\Desktop" && git clone https://github.com/eduardonnn/projeto-exemplo-simples.git
 ```
 
-**Explicação:**
+3. Para entrar na pasta e abrir a aplicação no navegador, execute:
 
-- `git clone ...`: baixa uma cópia completa dos arquivos e do histórico do projeto do GitHub para o seu computador.
-- `cd projeto-exemplo-simples`: entra na pasta que foi criada.
-- `start index.html`: abre o aplicativo no navegador padrão do Windows.
+```bat
+cd projeto-exemplo-simples && start index.html
+```
 
-**Atenção:** o `git clone` é usado apenas na primeira vez. Se você já possui a pasta clonada, abra o terminal nela e use `git pull` para trazer as alterações mais recentes do GitHub. O comando `start` é específico do Windows/PowerShell.
+**Explicação dos comandos:**
 
-### Para explicar o projeto na atividade
+- `cd /d "%USERPROFILE%\Desktop"`: acessa a Área de Trabalho do usuário no Windows.
+- `&&`: executa o próximo comando somente se o anterior funcionar.
+- `git clone ...`: baixa os arquivos e o histórico do projeto do GitHub, criando a pasta `projeto-exemplo-simples`.
+- `cd projeto-exemplo-simples`: entra na pasta do projeto.
+- `start index.html`: abre o site no navegador padrão.
 
-O sistema é uma lista de tarefas feita em HTML, CSS e JavaScript. O HTML organiza os elementos da página, o CSS define a aparência e o JavaScript controla a inclusão, conclusão, exclusão e filtragem de tarefas. O `localStorage` guarda as tarefas no próprio navegador para que continuem disponíveis após atualizar a página. O Git controla as versões do código, enquanto o GitHub disponibiliza o repositório para consulta e entrega do trabalho.
+**Observação:** faça o `git clone` apenas uma vez. Se a pasta já existir na Área de Trabalho, entre nela pelo CMD e execute `git pull` para atualizar o código. Se a Área de Trabalho estiver redirecionada para o OneDrive, utilize o caminho real dessa pasta.
 
-## Como executar
+Não precisa instalar Node.js, baixar bibliotecas ou configurar servidores.
 
-1. Faça o download do repositório pelo botão **Code → Download ZIP** e extraia os arquivos, ou clone pelo Git:
+## Explicação do projeto para a atividade
 
-   ```bash
-   git clone https://github.com/eduardonnn/projeto-exemplo-simples.git
-   ```
+O projeto é uma **lista de tarefas** desenvolvida com HTML, CSS e JavaScript. O **HTML** estrutura os elementos, o **CSS** define a aparência e a responsividade, e o **JavaScript** permite adicionar, marcar, filtrar e excluir tarefas. As informações ficam salvas no próprio navegador pelo **localStorage**.
 
-2. Entre na pasta `projeto-exemplo-simples`.
-3. Abra o arquivo `index.html` em um navegador atualizado.
-4. Digite uma tarefa, clique em **Adicionar** e experimente os filtros.
-
-Não é necessário instalar Node.js ou configurar um servidor.
+O **Git** registra as versões dos arquivos e permite clonar o projeto. O **GitHub** hospeda o repositório público e facilita o compartilhamento do código e sua entrega para avaliação.
 
 ## Estrutura do projeto
 
@@ -67,3 +66,6 @@ projeto-exemplo-simples/
 └── README.md      # Documentação
 ```
 
+## Repositório público
+
+https://github.com/eduardonnn/projeto-exemplo-simples
