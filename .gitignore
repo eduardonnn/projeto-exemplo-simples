@@ -1,0 +1,18 @@
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Configurações locais do editor
+.vscode/
+.idea/
+
+# Dependências e saídas de build, caso o projeto seja expandido
+node_modules/
+dist/
+build/
+
+# Credenciais e configurações locais
+.env
+.env.*
+!.env.example
