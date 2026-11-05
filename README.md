@@ -45,14 +45,3 @@ projeto-exemplo-simples/
 └── README.md      # Documentação
 ```
 
-## Observações
-
-- Os dados ficam armazenados somente no navegador e dispositivo em uso.
-- Não existe autenticação nem sincronização entre computadores.
-- Apagar os dados do site no navegador pode remover as tarefas cadastradas.
-
-## Objetivo da atividade
-
-Praticar a criação e documentação de um projeto, o versionamento com Git e a disponibilização pública do código-fonte em um repositório GitHub.
-
-**Repositório:** https://github.com/eduardonnn/projeto-exemplo-simples
