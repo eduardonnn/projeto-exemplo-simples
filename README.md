@@ -31,18 +31,6 @@ O projeto não utiliza frameworks, banco de dados nem dependências externas.
 cd /d "%USERPROFILE%\Desktop" && git clone https://github.com/eduardonnn/projeto-exemplo-simples.git
 ```
 
-**Explicação dos comandos:**
-
-- `cd /d "%USERPROFILE%\Desktop"`: acessa a Área de Trabalho do usuário no Windows.
-- `&&`: executa o próximo comando somente se o anterior funcionar.
-- `git clone ...`: baixa os arquivos e o histórico do projeto do GitHub, criando a pasta `projeto-exemplo-simples`.
-- `cd projeto-exemplo-simples`: entra na pasta do projeto.
-- `start index.html`: abre o site no navegador padrão.
-
-**Observação:** faça o `git clone` apenas uma vez. Se a pasta já existir na Área de Trabalho, entre nela pelo CMD e execute `git pull` para atualizar o código. Se a Área de Trabalho estiver redirecionada para o OneDrive, utilize o caminho real dessa pasta.
-
-Não precisa instalar Node.js, baixar bibliotecas ou configurar servidores.
-
 ## Explicação do projeto para a atividade
 
 O projeto é uma **lista de tarefas** desenvolvida com HTML, CSS e JavaScript. O **HTML** estrutura os elementos, o **CSS** define a aparência e a responsividade, e o **JavaScript** permite adicionar, marcar, filtrar e excluir tarefas. As informações ficam salvas no próprio navegador pelo **localStorage**.
